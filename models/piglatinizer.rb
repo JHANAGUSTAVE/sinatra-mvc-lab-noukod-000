@@ -12,7 +12,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(sentence)
-    words_in_sentence = sentence.split("i love programming")
+    words_in_sentence = sentence.split(" ")
 
     pig_latinized_words = words_in_sentence.collect do |word|
       self.piglatinize(word)
