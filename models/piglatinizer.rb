@@ -12,7 +12,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(sentence)
-    words_in_sentence = sentence.split(" ")
+    words_in_sentence = sentence.split("i love programming")
 
     pig_latinized_words = words_in_sentence.collect do |word|
       self.piglatinize(word)
@@ -21,10 +21,6 @@ class PigLatinizer
     new_sentence = pig_latinized_words.join(" ")
   end
 
-  def count_of_words
-    words = text.split(" ")
-    words.count
-  end
 
   def begins_with_vowel
     vowel_word = @new_word << "way"
