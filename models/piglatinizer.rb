@@ -20,12 +20,12 @@ class PigLatinizer
 
     new_sentence = pig_latinized_words.join(" ")
   end
-  
+
   def count_of_words
     words = text.split(" ")
     words.count
   end
-  
+
   def begins_with_vowel
     vowel_word = @new_word << "way"
   end
